@@ -5,7 +5,7 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 header{
-    background-color:antiquewhite;
+    background: rgba(255, 144, 14, 0.10);
     margin-bottom: 50px;
 }
 .logo h1{
@@ -227,12 +227,57 @@ color: #727272;
 font-size: 20px;
 font-weight: 600;
 }
-
-
 /* success design end */
 
-/* for small screen like phone */
+/* sponsor section start */
+.sponsor-section{
+    margin: 60px 0px;
+}
+.sponsor-heading{
+   text-align: center;
+   width: 50%;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+.sponsor-heading h1{
+   font-size: 45px ;
+   font-weight: 700;
+ }
 
+ .sponsor-heading p{
+    font-size: 16px ;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+.sponsor-image{
+    display: flex;
+    justify-content: space-between;
+}
+.image img{
+    width: 100%;
+}
+/* sponsor section end */
+
+/* footer section design start */
+footer{
+    width:80%;
+    margin: 0 auto;
+    background-color: #FFF4E7;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+.copyright-section p{
+text-align: center;
+padding: 25px;
+color: #424242;
+font-size: 20px;
+font-weight: 400;
+}
+/* footer section design end */
+
+/* for small screen like phone */
 @media screen and (max-width:576px) {
 
 .logo h1{
@@ -311,6 +356,33 @@ width: 100%;
     width: 100%;
 }
 
+/* sponsor section start */
+
+.sponsor-heading{
+   width: 100%;
+}
+.sponsor-heading h1{
+   font-size: 35px ;
+
+ }
+
+.sponsor-image{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+/* footer section */
+footer{
+    width:95%;
+}
+.copyright-section p{
+text-align: center;
+padding: 15px;
+color: #424242;
+font-size: 12px;
+font-weight: 400;
+}
 }
 
 /*for mini device like desktop tab */
@@ -381,4 +453,21 @@ font-size: 35px;
     .success-details{  
         width: 100%;
     }
+
+/* sponsor section  */
+
+.sponsor-heading{
+    width: 100%;
+ }
+ .sponsor-heading h1{
+    font-size: 45px ;
+  }
+ 
+ .sponsor-image{
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+     gap: 15px;
+ }
+
+
 }
