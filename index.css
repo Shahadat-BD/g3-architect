@@ -253,6 +253,7 @@ font-weight: 600;
 .sponsor-image{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 .image img{
     width: 100%;
@@ -298,44 +299,39 @@ nav > ul{
 .banner-section{
     margin:30px 0px;
 }
-.banner-description{
+.banner-description,main{
     width: 90%;
-    margin: 0 auto;
 }
-.banner-title{
-font-size: 30px;
+.banner-title,
+.features-title,
+.service-heading h1,.success-heading h1,
+.sponsor-heading h1{
+font-size: 34px;
 }
-.banner-info{
+
+.banner-info,
+.features-description,
+.success-heading p,
+.success-details,
+.sponsor-heading{
 width: 100%;
 }
 .primary-btn{
 padding: 15px 20px;
 font-size: 14px;
 }
-
 /* our feauture section are responsive */
-main{
-    width: 90%;
-    margin: 0 auto;
-}
+
 .our-features{
     flex-direction: column-reverse;
     padding-bottom: 30px;
 }
-.features-description{
-    width: 100%;
-}
-.features-title{
-font-size: 35px;
-}
-
 /* our service section design start */
-.service-section{
+.service-section,
+.success-description{
     grid-template-columns: repeat(1,1fr);
 }
-.service-heading h1{
-    font-size: 35px;
-}
+
 .architect-exp-year {
     bottom: -45px;
     left: 65px;
@@ -345,43 +341,11 @@ font-size: 35px;
     font-size: 30px;
 }
 
-/* success design   */
-.success-heading p{
-width: 100%;
-}
-.success-description{
-    grid-template-columns: repeat(1,1fr);
-}
-.success-details{  
-    width: 100%;
-}
-
-/* sponsor section start */
-
-.sponsor-heading{
-   width: 100%;
-}
-.sponsor-heading h1{
-   font-size: 35px ;
-
- }
-
-.sponsor-image{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 10px;
-}
-
 /* footer section */
-footer{
-    width:95%;
-}
+
 .copyright-section p{
-text-align: center;
 padding: 15px;
-color: #424242;
 font-size: 12px;
-font-weight: 400;
 }
 }
 
@@ -396,9 +360,8 @@ font-weight: 400;
 .banner-section{
     margin:30px 0px;
 }
-.banner-description{
+.banner-description,main{
     width: 90%;
-    margin: 0 auto;
 }
 .banner-title{
 font-size: 40px;
