@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+    background-color:antiquewhite;
+    margin-bottom: 50px;
+}
+.logo h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+nav > ul{
+    list-style-type:none;
+    display: flex;
+}
+li >a{
+     text-decoration: none;
+     font-size: 18px;
+     font-weight:500;
+     margin-right: 45px;
+     color: #424242;
+}
+
+/* banner section design start */
+.banner-section{
+    margin:50px 0px;
+}
+.banner-description{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.banner-title{
+color: #131313;
+font-size: 60px;
+font-weight: 700;
+}
+.banner-info{
+color: #727272;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+width: 80%;
+margin: 0 auto;
+margin-top: 20px;
+}
+.banner-btn{
+text-align: center;
+margin: 30px;
+}
+.primary-btn{
+padding: 18px 25px;
+border-radius: 8px;
+background-color: #FF900E;
+color: #FFF;
+font-size: 16px;
+font-weight: 600;
+border: none;
+}
+/* banner section design end */
+
+/* our features section design start */
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.our-features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+.features-imgae img{
+ width: 100%;
+}
+.features-imgae{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.features-description{
+    width: 60%;
+}
+.features-title{
+color: #727272;
+font-size: 45px;
+font-weight: 500;
+}
+.span-1{
+    color: #131313;
+    font-weight: 700;
+}
+.span-2{
+    color: #FF900E;
+    font-weight: 700;
+}
+.features-info{
+color: #727272;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+margin: 20px 0px;
+}
+/* our features section design end */
+
+/* our service section design start */
+.service-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 70px;
+    margin-bottom: 100px;
+}
+.service-heading h1{
+    border-left: 5px solid #FF900E;
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+.service-heading p{
+color: #727272;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+margin: 15px 0px;
+}
+.service-details{
+border-radius: 8px;
+background-color: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+margin: 10px 0px;
+padding: 15px;
+}
+.service-title{
+color:  #131313;
+font-size: 20px;
+font-weight: 600;
+}
+.service-info{
+color:#727272;
+font-size: 16px;
+font-weight: 400;
+line-height: 23px; /* 162.5% */
+margin: 10px 0px;
+}
+.architect-image img{
+    width: 100%;
+}
+
+.architect-image{
+ position: relative;
+}
+.architect-exp-year {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+}
+.architect-exp-year h1{
+    background-color: #FF900E;
+    width: 100%;
+    padding: 40px 18px;
+    color: #FFF;
+    text-align: center;
+    line-height: 0.7cm;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.exp{
+font-size: 16px;
+font-weight: 500;
+}
+/* our service section design end */
+
+/* for small screen like phone */
+
+@media screen and (max-width:576px) {
+
+.logo h1{
+    font-size:30px;
+    margin-bottom: 15px;
+}
+nav{
+    flex-direction: column;
+}
+nav > ul{
+   margin-left: -34px;
+}
+ li a{
+     margin: 25px 10px;
+}
+
+/* banner seciton for mobile screen */
+.banner-section{
+    margin:30px 0px;
+}
+.banner-description{
+    width: 90%;
+    margin: 0 auto;
+}
+.banner-title{
+font-size: 30px;
+}
+.banner-info{
+width: 100%;
+}
+.primary-btn{
+padding: 15px 20px;
+font-size: 14px;
+}
+
+/* our feauture section are responsive */
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.our-features{
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+}
+.features-description{
+    width: 100%;
+}
+.features-title{
+font-size: 35px;
+}
+
+/* our service section design start */
+.service-section{
+    grid-template-columns: repeat(1,1fr);
+}
+.service-heading h1{
+    font-size: 35px;
+}
+.architect-exp-year {
+    bottom: -45px;
+    left: 65px;
+}
+.architect-exp-year h1{
+    padding: 20px 18px;
+    font-size: 30px;
+}
+}
+
+/*for mini device like desktop tab */
+@media screen and (min-width:576px) and (max-width : 992px) {
+ 
+    .logo h1{
+        font-size:30px;
+    }
+
+ /* banner seciton for mobile screen */
+.banner-section{
+    margin:30px 0px;
+}
+.banner-description{
+    width: 90%;
+    margin: 0 auto;
+}
+.banner-title{
+font-size: 40px;
+}
+.banner-info{
+width: 95%;
+}
+
+/* our feauture section are responsive */
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.our-features{
+    margin-bottom: 80px;
+    flex-direction: column;
+}
+.features-description{
+    width: 100%;
+}
+.features-title{
+font-size: 35px;
+}
+
+/* our service section design start */
+.service-section{
+    grid-template-columns: repeat(1,1fr);
+}
+.service-details{
+    padding: 40px;
+}
+.service-heading h1{
+    font-size: 35px;
+}
+.architect-exp-year {
+    bottom: -45px;
+    left: 250px;
+}
+.architect-exp-year h1{
+    padding: 20px 18px;
+    font-size: 30px;
+}
+}
